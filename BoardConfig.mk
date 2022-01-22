@@ -52,9 +52,6 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
-ifeq ($(USE_FLAMEGAPPS),true)
-WITH_DEXPREOPT := true
-endif
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -77,6 +74,9 @@ TARGET_USES_ION := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
+
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
