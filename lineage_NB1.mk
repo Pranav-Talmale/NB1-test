@@ -13,18 +13,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit WLAN-Upgrade Modem
-$(call inherit-product, vendor/nokia/firmware/Android.mk)
+#$(call inherit-product, vendor/nokia/firmware/Android.mk)
 
 # Inherit from NB1 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Inherit Gapps
+ifeq ($(USE_GAPPS),true)
+include vendor/google/gms/config.mk
+endif
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := corvus_NB1
+PRODUCT_NAME := lineage_NB1
 PRODUCT_DEVICE := NB1
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
