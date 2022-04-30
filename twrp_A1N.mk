@@ -83,10 +83,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2127-12-31
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := NB1
-PRODUCT_NAME := twrp_NB1
+PRODUCT_DEVICE := A1N
+PRODUCT_NAME := twrp_A1N
 PRODUCT_BRAND := Nokia
-PRODUCT_MODEL := Nokia 8
+PRODUCT_MODEL := Nokia 8 Sicorro
 PRODUCT_MANUFACTURER := HMD Global
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
