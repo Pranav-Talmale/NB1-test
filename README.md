@@ -42,7 +42,7 @@ Then add to a local manifest (if you don't have .repo/local_manifest then make t
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="osm0sis/twrp_abtemplate" path="bootable/recovery/installer" remote="github" revision="master"/>
-  <project name="GPUCode/android_device_nokia_NB1-TWRP" path="device/nokia/NB1" remote="github" revision="android-11"/>
+  <project name="GPUCode/android_device_nokia_NB1-TWRP" path="device/nokia/NB1" remote="github" revision="android-11-A1N"/>
   <project name="GPUCode/android_kernel_nokia_msm8998" path="kernel/nokia/msm8998" remote="github" revision="twelve"/>
 </manifest>
 ```
