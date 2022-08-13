@@ -81,6 +81,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=msm8998 \
     ro.hardware.gatekeeper=msm8998 \
 
+
+# Props for a Successful Format 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.options=::v2 
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := NB1
 PRODUCT_NAME := twrp_NB1
