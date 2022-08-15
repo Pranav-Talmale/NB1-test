@@ -84,8 +84,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Props for a Successful Format 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.dm_default_key.options_format.version=2 \
-    ro.crypto.volume.options=::v2 
+     ro.crypto.volume.options=aes-256-xts
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := NB1
